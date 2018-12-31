@@ -1,0 +1,5 @@
+D:\WorkPro\GItHelperCode\NetDXFViewer-v0.1\NetDXFviwerWinform\obj\Debug\NetDXFviwerWinform.csprojAssemblyReference.cache
+D:\WorkPro\GItHelperCode\NetDXFViewer-v0.1\NetDXFviwerWinform\obj\Debug\NetDXFviwerWinform.Form1.resources
+D:\WorkPro\GItHelperCode\NetDXFViewer-v0.1\NetDXFviwerWinform\obj\Debug\NetDXFviwerWinform.Properties.Resources.resources
+D:\WorkPro\GItHelperCode\NetDXFViewer-v0.1\NetDXFviwerWinform\obj\Debug\NetDXFviwerWinform.csproj.GenerateResource.cache
+D:\WorkPro\GItHelperCode\NetDXFViewer-v0.1\NetDXFviwerWinform\obj\Debug\NetDXFviwerWinform.csproj.CoreCompileInputs.cache

@@ -1,0 +1,8 @@
+D:\资料文档\Basler\GrabWithTrigger_IO\GrabWithTrigger\APPConfig\bin\Release\APPConfig.dll
+D:\资料文档\Basler\GrabWithTrigger_IO\GrabWithTrigger\APPConfig\bin\Release\APPConfig.pdb
+D:\资料文档\Basler\GrabWithTrigger_IO\GrabWithTrigger\APPConfig\bin\Release\Logger.dll
+D:\资料文档\Basler\GrabWithTrigger_IO\GrabWithTrigger\APPConfig\bin\Release\Newtonsoft.Json.dll
+D:\资料文档\Basler\GrabWithTrigger_IO\GrabWithTrigger\APPConfig\bin\Release\Logger.pdb
+D:\资料文档\Basler\GrabWithTrigger_IO\GrabWithTrigger\APPConfig\obj\Release\APPConfig.csprojResolveAssemblyReference.cache
+D:\资料文档\Basler\GrabWithTrigger_IO\GrabWithTrigger\APPConfig\obj\Release\APPConfig.dll
+D:\资料文档\Basler\GrabWithTrigger_IO\GrabWithTrigger\APPConfig\obj\Release\APPConfig.pdb

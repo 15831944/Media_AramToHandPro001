@@ -1,0 +1,3 @@
+D:\APP\bin\Logger.dll
+G:\APP3.0\AutoPickPlaceV2\Logger\obj\x86\Release\Logger.dll
+D:\资料文档\Basler\GrabWithTrigger_IO\GrabWithTrigger\Logger\obj\x86\Release\Logger.dll

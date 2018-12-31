@@ -1,0 +1,4 @@
+D:\资料文档\Focus-Seattle Release\Logger.dll
+D:\资料文档\Focus-Seattle Release\Logger.pdb
+D:\资料文档\Basler\GrabWithTrigger_IO\GrabWithTrigger\Logger\obj\Release\Logger.dll
+D:\资料文档\Basler\GrabWithTrigger_IO\GrabWithTrigger\Logger\obj\Release\Logger.pdb

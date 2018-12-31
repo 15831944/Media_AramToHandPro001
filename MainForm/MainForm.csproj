@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{18EA9570-0AF4-4B2B-B37D-8D29F899F444}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MainForm</RootNamespace>
+    <AssemblyName>MainForm</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge, Version=2.2.5.0, Culture=neutral, PublicKeyToken=c1db6ff4eaa06aeb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Debug\dll\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Imaging, Version=2.2.5.0, Culture=neutral, PublicKeyToken=ba8ddea9676ca48b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Debug\dll\AForge.Imaging.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Math, Version=2.2.5.0, Culture=neutral, PublicKeyToken=abba2e25397ee8c9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Debug\dll\AForge.Math.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video, Version=2.2.5.0, Culture=neutral, PublicKeyToken=cbfb6e07d173c401, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Debug\dll\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow, Version=2.2.5.0, Culture=neutral, PublicKeyToken=61ea4348d43881b7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Debug\dll\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2, Version=12.5.0.2, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL" />
+    <Reference Include="DXFLib">
+      <HintPath>..\..\Debug\dll\DXFLib.dll</HintPath>
+    </Reference>
+    <Reference Include="FastColoredTextBox">
+      <HintPath>..\..\Debug\dll\FastColoredTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="SharpDX, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Debug\dll\SharpDX.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.DirectInput, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Debug\dll\SharpDX.DirectInput.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="virtualJoystick, Version=0.3.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Debug\dll\virtualJoystick.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DXFviwer\Arc.cs">
+      <DependentUpon>TextUtils.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DXFviwer\DrawEntities.cs" />
+    <Compile Include="DXFviwer\DrawUtils.cs" />
+    <Compile Include="DXFviwer\DXF2WPF.cs" />
+    <Compile Include="DXFviwer\TextUtils.cs" />
+    <Compile Include="DXFviwer\TxtSpliter.cs">
+      <DependentUpon>TypeConverter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DXFviwer\TypeConverter.cs" />
+    <Compile Include="DXFviwer\ZoomBorder.cs" />
+    <Compile Include="FormGDI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGDI.Designer.cs">
+      <DependentUpon>FormGDI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GcodeFun\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GcodeFun\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GcodeFun\gcode.cs" />
+    <Compile Include="GcodeFun\GCodeFromDXF.cs" />
+    <Compile Include="GcodeFun\GCodeFromFont.cs" />
+    <Compile Include="GcodeFun\GCodeVisuAndTransform.cs" />
+    <Compile Include="GcodeFun\toolTable.cs" />
+    <Compile Include="MachineControl\Control2ndGRBL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MachineControl\Control2ndGRBL.Designer.cs">
+      <DependentUpon>Control2ndGRBL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MachineControl\ControlCameraForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MachineControl\ControlCameraForm.Designer.cs">
+      <DependentUpon>ControlCameraForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MachineControl\ControlDIYControlPad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MachineControl\ControlDIYControlPad.Designer.cs">
+      <DependentUpon>ControlDIYControlPad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MachineControl\ControlGamePad.cs" />
+    <Compile Include="MachineControl\ControlHeightMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MachineControl\ControlHeightMap.Designer.cs">
+      <DependentUpon>ControlHeightMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MachineControl\ControlPowerSaving.cs" />
+    <Compile Include="MachineControl\ControlSerialForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MachineControl\ControlSerialForm.Designer.cs">
+      <DependentUpon>ControlSerialForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MachineControl\ControlSetupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MachineControl\ControlSetupForm.Designer.cs">
+      <DependentUpon>ControlSetupForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MachineControl\ControlStreamingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MachineControl\ControlStreamingForm.Designer.cs">
+      <DependentUpon>ControlStreamingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MachineControl\ControlStreamingForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MachineControl\ControlStreamingForm2.Designer.cs">
+      <DependentUpon>ControlStreamingForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MachineControl\GCodeVisuAndTransform.cs" />
+    <Compile Include="MachineControl\grblRelated.cs" />
+    <Compile Include="MachineControl\IniFile.cs" />
+    <Compile Include="Mainfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mainfrm.Designer.cs">
+      <DependentUpon>Mainfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainObject.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormGDI.resx">
+      <DependentUpon>FormGDI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MachineControl\Control2ndGRBL.de-DE.resx">
+      <DependentUpon>Control2ndGRBL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MachineControl\Control2ndGRBL.resx">
+      <DependentUpon>Control2ndGRBL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MachineControl\ControlCameraForm.de-DE.resx">
+      <DependentUpon>ControlCameraForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MachineControl\ControlCameraForm.resx">
+      <DependentUpon>ControlCameraForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MachineControl\ControlDIYControlPad.resx">
+      <DependentUpon>ControlDIYControlPad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MachineControl\ControlHeightMap.de-DE.resx">
+      <DependentUpon>ControlHeightMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MachineControl\ControlHeightMap.resx">
+      <DependentUpon>ControlHeightMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MachineControl\ControlSerialForm.de-DE.resx">
+      <DependentUpon>ControlSerialForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MachineControl\ControlSerialForm.resx">
+      <DependentUpon>ControlSerialForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MachineControl\ControlSetupForm.de-DE.resx">
+      <DependentUpon>ControlSetupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MachineControl\ControlSetupForm.resx">
+      <DependentUpon>ControlSetupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MachineControl\ControlStreamingForm.de-DE.resx">
+      <DependentUpon>ControlStreamingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MachineControl\ControlStreamingForm.resx">
+      <DependentUpon>ControlStreamingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MachineControl\ControlStreamingForm2.resx">
+      <DependentUpon>ControlStreamingForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mainfrm.resx">
+      <DependentUpon>Mainfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\APPConfig\APPConfig.csproj">
+      <Project>{b5729ae8-2ae6-4ae3-87e4-56f7061d9f45}</Project>
+      <Name>APPConfig</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Logger\Logger\Logger.csproj">
+      <Project>{21a3c93f-bbe5-4ca5-9209-6edbf4f761ed}</Project>
+      <Name>Logger</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\netDxf\netDxf\netDxf.csproj">
+      <Project>{785380e0-ceb9-4c34-82e5-60d0e33e848e}</Project>
+      <Name>netDxf</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\netDxf\TestDxfDocument\TestDxfDocument.csproj">
+      <Project>{65b33b00-93ce-484a-8023-7a9ba972d4d1}</Project>
+      <Name>TestDxfDocument</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

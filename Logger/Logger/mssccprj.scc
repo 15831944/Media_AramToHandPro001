@@ -1,0 +1,5 @@
+SCC = This is a Source Code Control file
+
+[Logger.csproj]
+SCC_Aux_Path = "\\192.168.0.61\vss"
+SCC_Project_Name = "$/NTS2.0/NTS.root/NTS/Logger", VVHCAAAA
